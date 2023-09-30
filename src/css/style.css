@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  overflow: hidden;
 }
 
 main::after {
@@ -62,3 +63,36 @@ main .character .image {
   margin-bottom: 2.2rem;
 }
 
+/* Aside Navbar */
+.buttons {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 100vh;
+  width: 11.25rem;
+}
+
+.buttons .button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* Optional */
+  transition: all ease .2s;
+  border-radius: 50%;
+}
+
+.buttons .button img {
+  border-radius: 50%;
+}
+
+.buttons .button.selected {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #d9d9d9;
+}
