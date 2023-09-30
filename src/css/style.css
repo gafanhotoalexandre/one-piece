@@ -2,6 +2,16 @@ body {
   background-color: #000;
 }
 
+main::after {
+  background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 80vw;
+}
+
 main .character {
   display: none;
   height: 100vh;
@@ -14,3 +24,41 @@ main .character .image {
   height: 100%;
   object-fit: cover;
 }
+
+/* Content */
+.content {
+  position: absolute;
+  top: 0;
+  left: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 23.75rem;
+
+  z-index: 1;
+}
+
+.content .character-name {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.content .description {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.content .logo {
+  background-image: url("../images/one-piece-logo.png");
+  background-size: cover;
+  height: 6.25rem;
+  width: 14.375rem;
+  margin-bottom: 2.2rem;
+}
+
