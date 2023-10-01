@@ -80,7 +80,7 @@ main .character .image {
 }
 
 .buttons .button {
-  background: none;
+  background: #000;
   border: none;
   cursor: pointer;
   /* Optional */
