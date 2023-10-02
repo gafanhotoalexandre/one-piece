@@ -1,10 +1,10 @@
 // adicionando classe ao botão selecionado
-function addSelectedClassHandle(button) {
+function addSelectedClassToButton(button) {
   if (button.classList.contains('selected')) return
   button.classList.add('selected')
 }
 // removendo classe .selected do botão
-function removeSelectedClassHandle() {
+function removeSelectedClassFromButton() {
   const selectedButton = document.querySelector('.button.selected')
   selectedButton.classList.remove('selected')
 }
@@ -27,9 +27,9 @@ const characters = document.querySelectorAll('.character')
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     // utilizando função para remover classe do botão anterior
-    removeSelectedClassHandle()
+    removeSelectedClassFromButton()
     // utilizando função para adicionar a classe ao botão
-    addSelectedClassHandle(button)
+    addSelectedClassToButton(button)
 
     removeSelectedClassFromCharacter()
     addSelectedClassToCharacter(index)
